@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "moretools",
+  "version": "${version}",
+  "name": "More-Tools",
+  "description": "Adding more Tools, Ores and Weapons with special abilities",
+  "authors": [
+    "Skunky"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/moretools/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.skunky.moretools.client.MoreToolsClient"
+    ],
+    "main": [
+      "net.skunky.moretools.MoreTools"
+    ]
+  },
+  "mixins": [
+    "moretools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
