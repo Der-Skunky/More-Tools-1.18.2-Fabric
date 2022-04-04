@@ -6,5 +6,10 @@
   "item.moretools.blaze_crystal": "Blaze Crystal",
   "item.moretools.ender_crystal": "End Crystal",
 
+  "block.moretools.ruby_ore": "Ruby Ore",
+  "block.moretools.sapphire_ore": "Sapphire Ore",
+  "block.moretools.green_sapphire_ore": "Green Sapphire Ore",
+  "block.moretools.crystal_ore": "Crystal Ore",
+
   "itemGroup.moretools.more-tools": "More Tools"
 }

@@ -33,7 +33,7 @@ public class initItems {
         return Registry.register(Registry.ITEM, new Identifier(MoreTools.MOD_ID, name), item);
     }
 
-    public static void regModItems() {
+    public static void init() {
         MoreTools.LOG.info("Registering Items for " + MoreTools.MOD_ID);
     }
 }

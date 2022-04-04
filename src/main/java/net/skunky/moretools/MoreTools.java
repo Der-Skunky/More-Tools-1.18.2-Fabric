@@ -5,7 +5,9 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.skunky.moretools.init.initBlocks;
 import net.skunky.moretools.init.initItems;
+import net.skunky.moretools.world.ModWorldGen;
 
 import java.util.logging.Logger;
 
@@ -17,6 +19,8 @@ public class MoreTools implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        initItems.regModItems();
+        ModWorldGen.generate();
+        initBlocks.init();
+        initItems.init();
     }
 }

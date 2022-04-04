@@ -6,5 +6,10 @@
   "item.moretools.blaze_crystal": "Lohe Kristal",
   "item.moretools.ender_crystal": "End Kristal",
 
+  "block.moretools.ruby_ore": "Rubin Erz",
+  "block.moretools.sapphire_ore": "Saphir Erz",
+  "block.moretools.green_sapphire_ore": "Grüner Saphir Erz",
+  "block.moretools.crystal_ore": "Kristal Erz",
+
   "itemGroup.moretools.more-tools": "More Tools"
 }
