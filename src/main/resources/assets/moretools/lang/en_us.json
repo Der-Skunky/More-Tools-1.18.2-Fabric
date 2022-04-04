@@ -1,0 +1,10 @@
+{
+  "item.moretools.ruby": "Ruby",
+  "item.moretools.sapphire": "Sapphire",
+  "item.moretools.green_sapphire": "Green Sapphire",
+  "item.moretools.crystal": "Crystal",
+  "item.moretools.blaze_crystal": "Blaze Crystal",
+  "item.moretools.ender_crystal": "End Crystal",
+
+  "itemGroup.moretools.more-tools": "More Tools"
+}

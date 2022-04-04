@@ -1,0 +1,10 @@
+{
+  "item.moretools.ruby": "Rubin",
+  "item.moretools.sapphire": "Saphir",
+  "item.moretools.green_sapphire": "Grüner Saphir",
+  "item.moretools.crystal": "Kristal",
+  "item.moretools.blaze_crystal": "Lohe Kristal",
+  "item.moretools.ender_crystal": "End Kristal",
+
+  "itemGroup.moretools.more-tools": "More Tools"
+}
