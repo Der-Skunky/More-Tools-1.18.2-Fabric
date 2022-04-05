@@ -4,6 +4,7 @@ package net.skunky.moretools.init;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
@@ -22,15 +23,19 @@ public class initBlocks {
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
     public static final Block RUBY_ORE_DEEPSLATE = registerBlock("ruby_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block RUBY_ORE_NETHERRACK = registerBlock("ruby_ore_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
 
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
     public static final Block SAPPHIRE_ORE_DEEPSLATE = registerBlock("sapphire_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block SAPPHIRE_ORE_NETHERRACK = registerBlock("sapphire_ore_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
 
     public static final Block GREEN_SAPPHIRE_ORE = registerBlock("green_sapphire_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
     public static final Block GREEN_SAPPHIRE_ORE_DEEPSLATE = registerBlock("green_sapphire_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block GREEN_SAPPHIRE_ORE_NETHERRACK = registerBlock("green_sapphire_ore_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
 
     public static final Block CRYSTAL_ORE = registerBlock("crystal_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
     public static final Block CRYSTAL_ORE_DEEPSLATE = registerBlock("crystal_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block CRYSTAL_ORE_NETHERRACK = registerBlock("crystal_ore_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
 
     private static Block registerBlock(String name, Block block, @Nullable String tooltipkey) {
         Registry.register(Registry.ITEM, new Identifier(MoreTools.MOD_ID, name),
@@ -46,6 +51,6 @@ public class initBlocks {
     }
 
     public static void init() {
-        MoreTools.LOG.info("Registering ModBlocks for " + MoreTools.MOD_ID);
+        MoreTools.LOG.info("Registering Blocks for " + MoreTools.MOD_ID);
     }
 }

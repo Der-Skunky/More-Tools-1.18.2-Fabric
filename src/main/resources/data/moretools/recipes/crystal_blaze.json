@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PC"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:blaze_powder"
+    },
+    "C": {
+      "tag": "c:crystal"
+    }
+  },
+  "result": {
+    "item": "moretools:blaze_crystal"
+  }
+}

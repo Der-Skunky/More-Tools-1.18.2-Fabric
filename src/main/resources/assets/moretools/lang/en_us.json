@@ -8,15 +8,19 @@
 
   "block.moretools.ruby_ore": "Ruby Ore",
   "block.moretools.ruby_ore_deepslate": "Deepslate Ruby Ore",
+  "block.moretools.ruby_ore_netherrack": "Netherrack Ruby Ore",
 
   "block.moretools.sapphire_ore": "Sapphire Ore",
   "block.moretools.sapphire_ore_deepslate": "Deepslate Sapphire Ore",
+  "block.moretools.sapphire_ore_netherrack": "Netherrack Sapphire Ore",
 
   "block.moretools.green_sapphire_ore": "Green Sapphire Ore",
   "block.moretools.green_sapphire_ore_deepslate": "Deepslate Green Sapphire Ore",
+  "block.moretools.green_sapphire_ore_netherrack": "Netherrack Green Sapphire Ore",
 
   "block.moretools.crystal_ore": "Crystal Ore",
   "block.moretools.crystal_ore_deepslate": "Deepslate Crystal Ore",
+  "block.moretools.crystal_ore_netherrack": "Netherrack Crystal Ore",
 
   "itemGroup.moretools.more-tools": "More Tools"
 }

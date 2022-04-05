@@ -3,11 +3,15 @@
   "values": [
     "moretools:ruby_ore",
     "moretools:ruby_ore_deepslate",
+    "moretools:ruby_ore_netherrack",
     "moretools:sapphire_ore",
     "moretools:sapphire_ore_deepslate",
+    "moretools:sapphire_ore_netherrack",
     "moretools:green_sapphire_ore",
     "moretools:green_sapphire_ore_deepslate",
+    "moretools:green_sapphire_ore_netherrack",
     "moretools:crystal_ore",
-    "moretools:crystal_ore_deepslate"
+    "moretools:crystal_ore_deepslate",
+    "moretools:crystal_ore_netherrack"
   ]
 }

@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.skunky.moretools.init.initBlocks;
 import net.skunky.moretools.init.initItems;
-import net.skunky.moretools.world.ModWorldGen;
+import net.skunky.moretools.world.Generator;
 
 import java.util.logging.Logger;
 
@@ -19,7 +19,7 @@ public class MoreTools implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModWorldGen.generate();
+        Generator.genOres();
         initBlocks.init();
         initItems.init();
     }
