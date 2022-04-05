@@ -10,22 +10,22 @@ public class ModConfFeatures {
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_RUBY_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, initBlocks.RUBY_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.RUBY_ORE.getDefaultState())
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.RUBY_ORE_DEEPSLATE.getDefaultState())
     );
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_SAPPHIRE_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, initBlocks.SAPPHIRE_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.SAPPHIRE_ORE.getDefaultState())
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.SAPPHIRE_ORE_DEEPSLATE.getDefaultState())
     );
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_GREEN_SAPPHIRE_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, initBlocks.GREEN_SAPPHIRE_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.GREEN_SAPPHIRE_ORE.getDefaultState())
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.GREEN_SAPPHIRE_ORE_DEEPSLATE.getDefaultState())
     );
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_CRYSTAL_ORES = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, initBlocks.CRYSTAL_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.CRYSTAL_ORE.getDefaultState())
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, initBlocks.CRYSTAL_ORE_DEEPSLATE.getDefaultState())
     );
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MORE_TOOLS_RUBY_ORES = ConfiguredFeatures.register("more_tools_ruby_ores", Feature.ORE,new OreFeatureConfig(OVERWORLD_RUBY_ORES, 10));

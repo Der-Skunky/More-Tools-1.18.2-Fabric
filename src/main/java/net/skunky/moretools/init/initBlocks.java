@@ -21,9 +21,16 @@ import java.util.List;
 public class initBlocks {
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block RUBY_ORE_DEEPSLATE = registerBlock("ruby_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block SAPPHIRE_ORE_DEEPSLATE = registerBlock("sapphire_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+
     public static final Block GREEN_SAPPHIRE_ORE = registerBlock("green_sapphire_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block GREEN_SAPPHIRE_ORE_DEEPSLATE = registerBlock("green_sapphire_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+
     public static final Block CRYSTAL_ORE = registerBlock("crystal_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+    public static final Block CRYSTAL_ORE_DEEPSLATE = registerBlock("crystal_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
 
     private static Block registerBlock(String name, Block block, @Nullable String tooltipkey) {
         Registry.register(Registry.ITEM, new Identifier(MoreTools.MOD_ID, name),
