@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR",
+    "RS",
+    " S"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:blaze_crystal"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moretools:blaze_axe"
+  }
+}

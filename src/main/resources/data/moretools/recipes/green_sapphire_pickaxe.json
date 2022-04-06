@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "R": {
+      "tag": "c:green_sapphire"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moretools:green_sapphire_pickaxe"
+  }
+}

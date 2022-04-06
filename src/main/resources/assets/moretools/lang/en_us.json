@@ -1,10 +1,40 @@
 {
   "item.moretools.ruby": "Ruby",
+  "item.moretools.ruby_axe": "Ruby Axe",
+  "item.moretools.ruby_sword": "Ruby Sword",
+  "item.moretools.ruby_pickaxe": "Ruby Pickaxe",
+  "item.moretools.ruby_shovel": "Ruby Shovel",
+  "item.moretools.ruby_hoe": "Ruby Hoe",
+
   "item.moretools.sapphire": "Sapphire",
+  "item.moretools.sapphire_axe": "Sapphire Axe",
+  "item.moretools.sapphire_sword": "Sapphire Sword",
+  "item.moretools.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.moretools.sapphire_shovel": "Sapphire Shovel",
+  "item.moretools.sapphire_hoe": "Sapphire Hoe",
+
   "item.moretools.green_sapphire": "Green Sapphire",
+  "item.moretools.green_sapphire_axe": "Green Sapphire Axe",
+  "item.moretools.green_sapphire_sword": "Green Sapphire Sword",
+  "item.moretools.green_sapphire_pickaxe": "Green Sapphire Pickaxe",
+  "item.moretools.green_sapphire_shovel": "Green Sapphire Shovel",
+  "item.moretools.green_sapphire_hoe": "Green Sapphire Hoe",
+
   "item.moretools.crystal": "Crystal",
   "item.moretools.blaze_crystal": "Blaze Crystal",
+  "item.moretools.blaze_axe": "Blaze Axe",
+  "item.moretools.blaze_sword": "Blaze Sword",
+  "item.moretools.blaze_pickaxe": "Blaze Pickaxe",
+  "item.moretools.blaze_shovel": "Blaze Shovel",
+  "item.moretools.blaze_hoe": "Blaze Hoe",
+
   "item.moretools.ender_crystal": "End Crystal",
+
+  "item.moretools.holy_axe": "Holy Axe",
+  "item.moretools.holy_sword": "Holy Sword",
+  "item.moretools.holy_pickaxe": "Holy Pickaxe",
+  "item.moretools.holy_shovel": "Holy Shovel",
+  "item.moretools.holy_hoe": "Holy Hoe",
 
   "block.moretools.ruby_ore": "Ruby Ore",
   "block.moretools.ruby_ore_deepslate": "Deepslate Ruby Ore",

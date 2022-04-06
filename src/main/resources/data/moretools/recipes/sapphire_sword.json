@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R",
+    "R",
+    "S"
+  ],
+  "key": {
+    "R": {
+      "tag": "c:sapphire"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moretools:sapphire_sword"
+  }
+}
