@@ -21,6 +21,7 @@
   "item.moretools.green_sapphire_hoe": "Green Sapphire Hoe",
 
   "item.moretools.crystal": "Crystal",
+
   "item.moretools.blaze_crystal": "Blaze Crystal",
   "item.moretools.blaze_axe": "Blaze Axe",
   "item.moretools.blaze_sword": "Blaze Sword",
@@ -29,6 +30,11 @@
   "item.moretools.blaze_hoe": "Blaze Hoe",
 
   "item.moretools.ender_crystal": "End Crystal",
+  "item.moretools.ender_axe": "Ender Axe",
+  "item.moretools.ender_sword": "Ender Sword",
+  "item.moretools.ender_pickaxe": "Ender Pickaxe",
+  "item.moretools.ender_shovel": "Ender Shovel",
+  "item.moretools.ender_hoe": "Ender Hoe",
 
   "item.moretools.holy_axe": "Holy Axe",
   "item.moretools.holy_sword": "Holy Sword",

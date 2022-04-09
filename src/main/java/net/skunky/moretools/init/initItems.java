@@ -48,7 +48,11 @@ public class initItems {
     public static final Item BLAZE_HOE = registerItem("blaze_hoe", new ModHoe(ModToolMaterial.BLAZE, -3, 0.0f, tool));
     public static final Item BLAZE_SWORD = registerItem("blaze_sword", new blazeSword(ModToolMaterial.BLAZE, 3, -2.4f, tool));
 
-    // Ender Crystal Items
+    public static final Item ENDER_SHOVEL = registerItem("ender_shovel", new ShovelItem(ModToolMaterial.ENDER, 1.5f, -3.0f, tool));
+    public static final Item ENDER_PICKAXE = registerItem("ender_pickaxe", new ModPickaxe(ModToolMaterial.ENDER, 5, -2.8f, tool));
+    public static final Item ENDER_AXE = registerItem("ender_axe", new ModAxe(ModToolMaterial.ENDER, 5.0f, -3.0f, tool));
+    public static final Item Ender_HOE = registerItem("ender_hoe", new ModHoe(ModToolMaterial.ENDER, -3, -2.4f, tool));
+    public static final Item ENDER_SWORD = registerItem("ender_sword", new SwordItem(ModToolMaterial.ENDER, 3, -2.4f, tool));
 
     public static final Item HOLY_SHOVEL = registerItem("holy_shovel", new ShovelItem(ModToolMaterial.HOLY, 1.5f, -3.0f, tool));
     public static final Item HOLY_PICKAXE = registerItem("holy_pickaxe", new ModPickaxe(ModToolMaterial.HOLY, 5, -2.8f, tool));

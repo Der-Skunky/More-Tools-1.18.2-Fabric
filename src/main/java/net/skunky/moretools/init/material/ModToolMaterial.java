@@ -22,7 +22,7 @@ public enum ModToolMaterial implements ToolMaterial {
     CRYSTAL         (MiningLevels.DIAMOND, 500, 6.0f, 2.0f, 14, () -> Ingredient.ofItems(initItems.CRYSTAL)),
     BLAZE           (MiningLevels.DIAMOND, 650, 6.5f, 2.0f, 14, () -> Ingredient.ofItems(initItems.BLAZE_CRYSTAL)),
     HOLY           (MiningLevels.DIAMOND, 650, 8.0f, 2.0f, 14, () -> Ingredient.ofItems(initItems.BLAZE_CRYSTAL)),
-    ENDER           (MiningLevels.DIAMOND, 1200, 10.0f, 2.0f, 14, () -> Ingredient.ofItems(initItems.ENDER_CRYSTAL));
+    ENDER           (MiningLevels.NETHERITE, 1200, 10.0f, 2.0f, 14, () -> Ingredient.ofItems(initItems.ENDER_CRYSTAL));
 
     private final int miningLevel;
     private final int itemDurability;
