@@ -1,6 +1,7 @@
 package net.skunky.moretools.init;
 
 
+import net.skunky.moretools.MoreTools;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -9,11 +10,12 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
+
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
-import net.skunky.moretools.MoreTools;
+import net.skunky.moretools.custom.entities.blocks.CrystalTable;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -35,6 +37,9 @@ public class initBlocks {
     public static final Block CRYSTAL_ORE = registerBlock("crystal_ore", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
     public static final Block CRYSTAL_ORE_DEEPSLATE = registerBlock("crystal_ore_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
     public static final Block CRYSTAL_ORE_NETHERRACK = registerBlock("crystal_ore_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), null);
+
+    /* Custom Block Models*/
+    public static final Block CRYSTAL_TABLE = registerBlock("crystal_table", new CrystalTable(FabricBlockSettings.of(Material.METAL)), null);
 
     private static Block registerBlock(String name, Block block, @Nullable String tooltipkey) {
         Registry.register(Registry.ITEM, new Identifier(MoreTools.MOD_ID, name),

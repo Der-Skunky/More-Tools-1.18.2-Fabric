@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.skunky.moretools.custom.entities.initBlockEntities;
+import net.skunky.moretools.custom.recipe.initRecipes;
+import net.skunky.moretools.custom.screen.initScreenHandler;
 import net.skunky.moretools.init.initBlocks;
 import net.skunky.moretools.init.initItems;
 import net.skunky.moretools.world.Generator;
@@ -22,5 +25,9 @@ public class MoreTools implements ModInitializer {
         Generator.genOres();
         initBlocks.init();
         initItems.init();
+
+        initBlockEntities.init();
+        initScreenHandler.init();
+        initRecipes.init();
     }
 }

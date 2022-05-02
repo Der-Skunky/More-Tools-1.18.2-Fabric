@@ -62,9 +62,6 @@ public class Generator {
 
 
 
-
-
-
     // Placed Features
     public static final RegistryEntry<PlacedFeature> RUBY_ORE_PLACED =
             PlacedFeatures.register("ruby_ore_placed", RUBY_ORE, modifiersWithCount(7, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(72))));
