@@ -1,0 +1,14 @@
+{
+  "type": "moretools:soul_furnace",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_sword"
+    },
+    {
+      "item": "moretools:ender_crystal"
+    }
+  ],
+  "output": {
+    "item": "moretools:ender_sword"
+  }
+}

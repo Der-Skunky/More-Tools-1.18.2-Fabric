@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "moretools:block/soul_furnace" },
+    "facing=east": { "model": "moretools:block/soul_furnace", "y": 90 },
+    "facing=south": { "model": "moretools:block/soul_furnace", "y": 180 },
+    "facing=west": { "model": "moretools:block/soul_furnace", "y": 270 }
+  }
+}

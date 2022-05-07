@@ -6,6 +6,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.skunky.moretools.custom.screen.SoulFurnaceScreen;
 import net.skunky.moretools.custom.screen.initScreenHandler;
 import net.skunky.moretools.init.initBlocks;
 
@@ -13,8 +14,8 @@ import net.skunky.moretools.init.initBlocks;
 public class MoreToolsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(initBlocks.CRYSTAL_TABLE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(initBlocks.SOUL_FURNACE, RenderLayer.getCutout());
 
-        //ScreenRegistry.register(initScreenHandler.CRYSTAL_TABLE_SCREEN_HANDLER, CrystalTableScreen::new);
+        ScreenRegistry.register(initScreenHandler.SOUL_FURNACE_SCREEN_HANDLER, SoulFurnaceScreen::new);
     }
 }
