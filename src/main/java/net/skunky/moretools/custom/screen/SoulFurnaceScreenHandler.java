@@ -11,6 +11,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.skunky.moretools.custom.slots.outputSlot;
 import net.skunky.moretools.custom.slots.soulInputSlot;
+import net.skunky.moretools.init.initScreenHandler;
 
 public class SoulFurnaceScreenHandler extends ScreenHandler {
     private final Inventory inventory;

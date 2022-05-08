@@ -1,9 +1,8 @@
-package net.skunky.moretools.custom.fuels;
+package net.skunky.moretools.init;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.skunky.moretools.MoreTools;
-import net.skunky.moretools.init.initItems;
 
 import java.util.HashMap;
 

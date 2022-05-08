@@ -7,7 +7,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.skunky.moretools.custom.screen.SoulFurnaceScreen;
-import net.skunky.moretools.custom.screen.initScreenHandler;
+import net.skunky.moretools.init.initScreenHandler;
 import net.skunky.moretools.init.initBlocks;
 
 @Environment(EnvType.CLIENT)

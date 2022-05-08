@@ -4,7 +4,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.screen.slot.Slot;
-import net.skunky.moretools.custom.fuels.initFuels;
+import net.skunky.moretools.init.initFuels;
 
 public class soulInputSlot extends Slot {
 

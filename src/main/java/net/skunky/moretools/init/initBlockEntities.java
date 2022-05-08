@@ -1,10 +1,11 @@
-package net.skunky.moretools.custom.entities;
+package net.skunky.moretools.init;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.skunky.moretools.MoreTools;
+import net.skunky.moretools.custom.entities.SoulFurnaceEntity;
 import net.skunky.moretools.init.initBlocks;
 
 public class initBlockEntities {

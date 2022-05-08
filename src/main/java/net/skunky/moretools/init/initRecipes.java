@@ -1,8 +1,9 @@
-package net.skunky.moretools.custom.recipe;
+package net.skunky.moretools.init;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.skunky.moretools.MoreTools;
+import net.skunky.moretools.custom.recipe.SoulFurnaceRecipe;
 
 public class initRecipes {
 

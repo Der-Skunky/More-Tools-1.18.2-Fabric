@@ -8,6 +8,8 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.Identifier;
 import net.skunky.moretools.MoreTools;
 import net.minecraft.text.Text;
+import net.skunky.moretools.init.initCraftingCosts;
+
 
 public class SoulFurnaceScreen extends HandledScreen<SoulFurnaceScreenHandler> {
     private static final Identifier TEXTURE = new Identifier(MoreTools.MOD_ID, "textures/gui/soul_furnace.png");
@@ -51,8 +53,26 @@ public class SoulFurnaceScreen extends HandledScreen<SoulFurnaceScreenHandler> {
                     49 - handler.getScaledSoulProgress(49), 16, handler.getScaledSoulProgress(49));
         }
 
+
+        if (handler.isCrafting()) {
+            drawTexture(matrices, x + 151, y + 54, 185, 56, 8, 7); // recipe accepted
+            renderTip(matrices, "Recipe accepted", mouseX, mouseY);
+        } else {
+            drawTexture(matrices, x + 151, y + 54, 176, 56, 8, 7); // something is missing
+            renderTip(matrices, "Something is missing", mouseX, mouseY);
+        }
+
+
         this.souls = handler.getSouls();
         this.maxSouls = handler.getMaxSouls();
+    }
+
+    private void renderTip(MatrixStack matrices, String text, int mouseX, int mouseY) {
+        if (mouseX >= x + 151 && mouseX <= x + 158) {
+            if (mouseY >= y + 54 && mouseY <= y + 60) {
+                renderTooltip(matrices, Text.of(text), mouseX, mouseY);
+            }
+        }
     }
 
     @Override

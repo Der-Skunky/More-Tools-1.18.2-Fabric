@@ -1,15 +1,15 @@
 package net.skunky.moretools.custom.entities;
 
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import com.mojang.serialization.Decoder;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
@@ -19,7 +19,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.skunky.moretools.custom.fuels.initFuels;
+import net.skunky.moretools.init.initBlockEntities;
+import net.skunky.moretools.init.initCraftingCosts;
+import net.skunky.moretools.init.initFuels;
 import net.skunky.moretools.custom.inventory.ImplementedInventory;
 import net.skunky.moretools.custom.recipe.SoulFurnaceRecipe;
 import net.skunky.moretools.custom.screen.SoulFurnaceScreenHandler;
@@ -156,6 +158,17 @@ public class SoulFurnaceEntity extends BlockEntity implements NamedScreenHandler
         return match.isPresent() && canOutputAmount(inventory) && canOutput(inventory, match.get().getOutput());
     }
 
+    private static Item getOutputItem(SoulFurnaceEntity entity) {
+        World world = entity.world;
+        SimpleInventory inventory = new SimpleInventory(entity.inventory.size());
+        for (int i = 0; i < entity.inventory.size(); i++) {
+            inventory.setStack(i, entity.getStack(i));
+        }
+        assert world != null;
+        Optional<SoulFurnaceRecipe> match = world.getRecipeManager().getFirstMatch(SoulFurnaceRecipe.Type.INSTANCE, inventory, world);
+        return match.get().getOutput().getItem();
+    }
+
     private static void craftItem(SoulFurnaceEntity entity) {
         World world = entity.world;
         SimpleInventory inventory = new SimpleInventory(entity.inventory.size());
@@ -165,7 +178,6 @@ public class SoulFurnaceEntity extends BlockEntity implements NamedScreenHandler
         }
         assert world != null;
         Optional<SoulFurnaceRecipe> match = world.getRecipeManager().getFirstMatch(SoulFurnaceRecipe.Type.INSTANCE, inventory, world);
-
         if (match.isPresent()) {
             entity.removeStack(1, 1);
             entity.removeStack(2, 1);
@@ -174,7 +186,7 @@ public class SoulFurnaceEntity extends BlockEntity implements NamedScreenHandler
                     entity.getStack(3).getCount() + 1));
 
             entity.resetProgress();
-            entity.souls = entity.souls - 200;
+            entity.souls = entity.souls - initCraftingCosts.costsList.get(entity.getStack(3).getItem());
         }
     }
 
@@ -190,8 +202,8 @@ public class SoulFurnaceEntity extends BlockEntity implements NamedScreenHandler
             }
         }
 
-        if(hasRecipe(entity)) {
-            if (entity.souls >= 200) {
+        if (hasRecipe(entity)) {
+            if (entity.souls >= initCraftingCosts.costsList.get(getOutputItem(entity))) {
                 entity.progress++;
                 if (entity.progress > entity.maxProgress) {
                     craftItem(entity);

@@ -1,10 +1,11 @@
-package net.skunky.moretools.custom.screen;
+package net.skunky.moretools.init;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.skunky.moretools.MoreTools;
+import net.skunky.moretools.custom.screen.SoulFurnaceScreenHandler;
 
 public class initScreenHandler {
     /*

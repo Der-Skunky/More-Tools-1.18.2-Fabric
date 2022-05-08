@@ -17,7 +17,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.skunky.moretools.custom.entities.SoulFurnaceEntity;
-import net.skunky.moretools.custom.entities.initBlockEntities;
+import net.skunky.moretools.init.initBlockEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class SoulFurnace extends BlockWithEntity implements BlockEntityProvider {
