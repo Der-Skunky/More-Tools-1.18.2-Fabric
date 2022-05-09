@@ -28,7 +28,6 @@ public class SoulFurnaceScreen extends HandledScreen<SoulFurnaceScreenHandler> {
     protected void init() {
         super.init();
         titleX = backgroundWidth - textRenderer.getWidth(title) - 5;
-
     }
 
     @Override

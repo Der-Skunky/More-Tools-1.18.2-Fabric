@@ -6,7 +6,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.skunky.moretools.MoreTools;
 import net.skunky.moretools.custom.entities.SoulFurnaceEntity;
-import net.skunky.moretools.init.initBlocks;
 
 public class initBlockEntities {
     /*

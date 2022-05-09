@@ -1,0 +1,14 @@
+{
+  "type": "moretools:soul_furnace",
+  "ingredients": [
+    {
+      "item": "moretools:crystal"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "output": {
+    "item": "moretools:ender_crystal"
+  }
+}

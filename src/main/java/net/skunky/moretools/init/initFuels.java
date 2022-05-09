@@ -12,17 +12,19 @@ public class initFuels {
     public static void init() {
         MoreTools.LOG.info("Registering Fuels for the Soul Furnace " + MoreTools.MOD_ID);
         // Vanilla Items
-        put(Items.DIRT, 5);
-        put(Items.GRASS_BLOCK, 5);
-        put(Items.ENDER_PEARL, 10);
-        put(Items.ENDER_EYE, 20);
-        put(Items.SOUL_SAND, 100);
-        put(Items.DRAGON_EGG, 1000);
-        put(Items.DRAGON_HEAD, 1500);
+        put(Items.DIRT, 1);
+        put(Items.GRASS_BLOCK, 1);
+        put(Items.BLAZE_POWDER, 1);
+        put(Items.BLAZE_ROD, 5);
+        put(Items.ENDER_PEARL, 5);
+        put(Items.ENDER_EYE, 10);
+        put(Items.SOUL_SAND, 50);
+        put(Items.DRAGON_EGG, 500);
+        put(Items.DRAGON_HEAD, 750);
 
         // Mod Items
-        put(initItems.ENDER_CRYSTAL, 40);
-        put(initItems.BLAZE_CRYSTAL, 10);
+        put(initItems.ENDER_CRYSTAL, 20);
+        put(initItems.BLAZE_CRYSTAL, 5);
     }
 
     private static void put(Item item, Integer fuelTime) {
